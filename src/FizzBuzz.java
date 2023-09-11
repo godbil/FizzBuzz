@@ -4,13 +4,12 @@
 class FizzBuzz {
 
     public static void main(String[] args) {
-
-        doFizzBuzz();
+        doFizzBuzz(100);
     }
 
-    private static void doFizzBuzz() {
+    public static void doFizzBuzz(int max) {
         int i = 1;
-        while (i < 100) {
+        while (i < max) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
